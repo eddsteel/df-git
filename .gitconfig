@@ -1,0 +1,8 @@
+[user]
+	name = Edd Steel
+	email = edward.steel@gmail.com
+[alias]
+	graph = log --branches --color --oneline --graph --decorate
+	lg = log --color --oneline
+[color]
+	ui = true
