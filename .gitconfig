@@ -1,7 +1,6 @@
 [user]
 	name = Edd Steel
-	email = edward.steel@gmail.com
-	signingkey = D40385A0
+	email = edward.steel@hootsuite.com
 [alias]
 	graph = log --branches --color --oneline --graph --decorate
 	lg = log --color --oneline
