@@ -6,3 +6,5 @@
 	lg = log --color --oneline
 [color]
 	ui = true
+[merge]
+	tool = vimdiff
