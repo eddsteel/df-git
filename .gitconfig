@@ -1,6 +1,5 @@
 [user]
 	name = Edd Steel
-	email = edward.steel@hootsuite.com
 [alias]
 	graph = log --branches --color --oneline --graph --decorate
 	lg = log --color --oneline
@@ -12,3 +11,6 @@
 	keepBackup = false
 [url "git@github.com:eddsteel/"]
 	pushInsteadOf = git://github.com/eddsteel/
+
+[include]
+	path = .gitconfig.extra
