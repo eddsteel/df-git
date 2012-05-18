@@ -10,3 +10,5 @@
 	tool = vimdiff
 [mergetool]
 	keepBackup = false
+[url "git@github.com:eddsteel/"]
+	pushInsteadOf = git://github.com/eddsteel/
