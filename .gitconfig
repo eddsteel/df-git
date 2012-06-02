@@ -15,3 +15,5 @@
 	pushInsteadOf = git://github.com/eddsteel/
 [include]
 	path = .gitconfig.extra
+[core]
+	editor = /usr/bin/vim
