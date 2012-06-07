@@ -3,6 +3,7 @@
 [alias]
 	graph = log --branches --color --oneline --graph --decorate
 	lg = log --color --oneline
+	lgh = !git lg | head
 [color]
 	ui = true
 [merge]
