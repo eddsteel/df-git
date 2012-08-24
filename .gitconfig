@@ -18,4 +18,4 @@
 	path = .gitconfig.extra
 [core]
 	editor = /usr/bin/vim
-	excludefile = .gitignore-global
+	excludesfile = ~/.gitignore-global
