@@ -14,6 +14,7 @@
 	insteadOf = github://
 [url "git@github.com:eddsteel/"]
 	pushInsteadOf = git://github.com/eddsteel/
+	pushInsteadOf = https://github.com/eddsteel/
 [include]
 	path = .gitconfig.extra
 [core]
