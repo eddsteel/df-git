@@ -1,9 +1,8 @@
 [user]
 	name = Edd Steel
 [alias]
-	graph = log --branches --color --oneline --graph --decorate
-	lg = log --color --oneline
-	lgh = !git graph -10 | head -n 10
+	lg = log --branches --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
+	lgh = !git lg -10 | head -n 10
 [color]
 	ui = true
 [merge]
@@ -23,3 +22,5 @@
 	excludesfile = ~/.gitignore-global
 [push]
 	default = current
+[diff]
+		algorithm = patience
