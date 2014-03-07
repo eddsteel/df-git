@@ -1,4 +1,12 @@
 .tmux_title
 doc/tags
 target
+lib_managed/
 tags
+.history
+.ensime*
+*~
+.#*
+*#
+.vagrant
+*.elc
