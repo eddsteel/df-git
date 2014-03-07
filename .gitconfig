@@ -24,3 +24,5 @@
 	default = current
 [diff]
 		algorithm = patience
+[branch]
+	autosetuprebase = always
