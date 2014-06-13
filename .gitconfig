@@ -1,7 +1,7 @@
 [user]
 	name = Edd Steel
 [alias]
-	lg = log --branches --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
+	lg = log --branches --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%aN>%Creset' --abbrev-commit
 	lgh = !git lg -10 | head -n 10
 [color]
 	ui = true
@@ -18,7 +18,7 @@
 [include]
 	path = .gitconfig.extra
 [core]
-	editor = /usr/bin/vim
+	editor = /usr/local/bin/emacsclient
 	excludesfile = ~/.gitignore-global
 [push]
 	default = current
@@ -26,3 +26,5 @@
 		algorithm = patience
 [branch]
 	autosetuprebase = always
+[log]
+	mailmap = true
