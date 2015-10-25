@@ -10,8 +10,9 @@
 [color]
 	ui = true
 [merge]
-	tool = vimdiff
-[mergetool]
+	tool = ec
+[mergetool "ec"]
+	cmd = emacsclient -c -a \"\"  --eval \"(ediff-merge-files-with-ancestor \\\"$LOCAL\\\" \\\"$REMOTE\\\" \\\"$BASE\\\" nil \\\"$MERGED\\\")\"
 	keepBackup = false
 [url "git://github.com/"]
 	insteadOf = github://
