@@ -10,3 +10,6 @@ tags
 *#
 .vagrant
 *.elc
+pkgsrc
+.DS_Store
+*.bak
