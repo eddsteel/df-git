@@ -13,3 +13,4 @@ tags
 pkgsrc
 .DS_Store
 *.bak
+*.pyc
