@@ -7,6 +7,7 @@
         branch-nuke = "!git branch | while read b; do git branch -d $b; done"
         pr = !hub pull-request
         praise = blame
+        init-remote = "!ssh git@eddsteel.com git init --bare "
 [color]
         ui = true
 [merge]
