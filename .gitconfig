@@ -1,36 +1,42 @@
 [user]
-        name = Edd Steel
+	name = Edd Steel
 [alias]
-        lg = log --branches --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%aN>%Creset' --abbrev-commit
-        lgh = !git lg -10 | head -n 10
-        branch-clean = "!git branch | egrep '^  edd/' | while read b; do git branch -d $b; done"
-        branch-nuke = "!git branch | while read b; do git branch -d $b; done"
-        pr = !hub pull-request
-        praise = blame
-        init-remote = "!ssh git@eddsteel.com git init --bare "
+	lg = log --branches --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%aN>%Creset' --abbrev-commit
+	lgh = !git lg -10 | head -n 10
+	sweep = "!git branch | egrep '^  edd/' | while read b; do git branch -d $b; done"
+	mrproper = "!git branch | egrep '^  edd/' | while read b; do git branch -D $b; done"
+	nuke = "!git branch | while read b; do git branch -d $b; done"
+	pr = !hub pull-request
+	praise = blame
+	decap = reset HEAD^
+	cpr  = "!f() { git fetch -fu ${2:-origin} refs/pull/$1/head:pr/$1 && git checkout pr/$1; }; f"
+	cpr-clean = "!git for-each-ref refs/heads/pr/* --format='%(refname)' | while read ref ; do branch=${ref#refs/heads/} ; git branch -D $branch ; done"
+	create = !hub create
+	init-remote = "!ssh git@eddsteel.com git init --bare "
+
 [color]
-        ui = true
+	ui = true
 [merge]
-        tool = ec
+	tool = ec
 [mergetool "ec"]
-        cmd = emacsclient -c -a \"\"  --eval \"(ediff-merge-files-with-ancestor \\\"$LOCAL\\\" \\\"$REMOTE\\\" \\\"$BASE\\\" nil \\\"$MERGED\\\")\"
-        keepBackup = false
+	cmd = emacsclient -c -a \"\"  --eval \"(ediff-merge-files-with-ancestor \\\"$LOCAL\\\" \\\"$REMOTE\\\" \\\"$BASE\\\" nil \\\"$MERGED\\\")\"
+	keepBackup = false
 [url "git://github.com/"]
-        insteadOf = github://
+	insteadOf = github://
 [url "git@github.com:eddsteel/"]
-        pushInsteadOf = git://github.com/eddsteel/
-        pushInsteadOf = https://github.com/eddsteel/
-        pushInsteadOf = github://eddsteel/
+	pushInsteadOf = git://github.com/eddsteel/
+	pushInsteadOf = https://github.com/eddsteel/
+	pushInsteadOf = github://eddsteel/
 [include]
-        path = .gitconfig.extra
+	path = .gitconfig.extra
 [core]
-        editor = emacsclient
-        excludesfile = ~/.gitignore-global
+	editor = emacsclient
+	excludesfile = ~/.gitignore-global
 [push]
-        default = current
+	default = current
 [diff]
-                algorithm = patience
+		algorithm = patience
 [branch]
-        autosetuprebase = always
+	autosetuprebase = always
 [log]
-        mailmap = true
+	mailmap = true
