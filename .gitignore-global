@@ -14,3 +14,4 @@ pkgsrc
 .DS_Store
 *.bak
 *.pyc
+/.stack-work
