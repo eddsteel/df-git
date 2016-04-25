@@ -13,7 +13,8 @@
 	cpr-clean = "!git for-each-ref refs/heads/pr/* --format='%(refname)' | while read ref ; do branch=${ref#refs/heads/} ; git branch -D $branch ; done"
 	create = !hub create
 	init-remote = "!ssh git@eddsteel.com git init --bare "
-
+	# please don't use this on real code
+	shove = "!git commit -am \"Shoved update $(date)\" && git pull --rebase && git push origin master"
 [color]
 	ui = true
 [merge]
