@@ -41,6 +41,6 @@
 [diff]
                 algorithm = patience
 [branch]
-        autosetuprebase = always
+	autosetuprebase = always
 [log]
         mailmap = true
