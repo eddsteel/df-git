@@ -1,5 +1,6 @@
 [user]
         name = Edd Steel
+	signingkey = 33620159D40385A0
 [alias]
         lg = log --branches --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%aN>%Creset' --abbrev-commit
         lgh = !git lg -10 | head -n 10
@@ -39,7 +40,7 @@
 [push]
         default = current
 [diff]
-                algorithm = patience
+#                algorithm = patience
 [branch]
 	autosetuprebase = always
 [log]
