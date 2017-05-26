@@ -16,6 +16,7 @@
         init-remote = "!ssh git@eddsteel.com git init --bare "
         # please don't use this on real code
         shove = "!git commit -am \"Shoved update $(date)\" && git pull --rebase && git push origin master"
+        clogp = -c core.pager='less -p^commit.*$' log -p
 [color]
         ui = true
 [merge]
