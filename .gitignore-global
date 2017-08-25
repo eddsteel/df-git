@@ -19,3 +19,6 @@ pkgsrc
 /GRTAGS
 /GTAGS
 .tramp_history
+.agignore
+.rgignore
+.sbt-hydra-history
