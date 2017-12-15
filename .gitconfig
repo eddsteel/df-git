@@ -1,6 +1,6 @@
 [user]
         name = Edd Steel
-        signingkey = 33620159D40385A0
+        signingkey = 1BE848D76C7C4C51349DDDCC33620159D40385A0
 [alias]
         lg = log --branches --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%aN> %G? %Creset' --abbrev-commit
         lgh = !git lg -10 | head -n 10
@@ -44,7 +44,7 @@
 [diff]
 #                algorithm = patience
 [branch]
-	autosetuprebase = always
+        autosetuprebase = always
 [log]
         mailmap = true
 [commit]
