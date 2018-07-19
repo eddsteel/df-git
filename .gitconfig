@@ -55,6 +55,9 @@
 [pull]
         rebase = true
 
+[rebase]
+        autostash = true
+
 [filter "lfs"]
         process = git-lfs filter-process
         required = true
