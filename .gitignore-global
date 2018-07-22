@@ -23,3 +23,5 @@ pkgsrc
 .rgignore
 .sbt-hydra-history
 ensime.sbt
+.sbt-hydra-history
+node_modules
