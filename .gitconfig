@@ -34,8 +34,6 @@
         insteadOf = github://eddsteel/
         pushInsteadOf = gh:eddsteel/
 
-[include]
-        path = .gitconfig.extra
 [core]
         editor = emacsclient
         excludesfile = ~/.gitignore-global
@@ -63,3 +61,5 @@
         required = true
         clean = git-lfs clean -- %f
         smudge = git-lfs smudge -- %f
+[include]
+        path = .gitconfig.extra
