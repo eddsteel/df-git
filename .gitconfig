@@ -37,6 +37,7 @@
 [core]
         editor = emacsclient
         excludesfile = ~/.gitignore-global
+        commentChar = ";"
 [push]
         default = current
 [diff]
@@ -47,6 +48,7 @@
         mailmap = true
 [commit]
         gpgsign = true
+
 [tag]
         forceSignedAnnotated=true
 
@@ -63,3 +65,7 @@
         smudge = git-lfs smudge -- %f
 [include]
         path = .gitconfig.extra
+[github]
+	user = eddsteel
+[submodule]
+	recurse = true

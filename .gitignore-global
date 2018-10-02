@@ -25,3 +25,4 @@ pkgsrc
 ensime.sbt
 .sbt-hydra-history
 node_modules
+.projectile
